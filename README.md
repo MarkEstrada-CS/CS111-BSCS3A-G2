@@ -1,2 +1,2 @@
 # CS111-BSCS3A-G2
-Space Invader made in www.kodular.io
+Space Invader mobile game made in www.kodular.io
