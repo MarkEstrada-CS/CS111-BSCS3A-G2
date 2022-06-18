@@ -5,5 +5,5 @@ Members:
 [Cruz, Joshua Angelo]
 [Encina, Daniel]
 [Estrada, Mark Vincent]
-[Larion, Loude]
+[Larion, John Loude]
 [Pura, Kevin]
