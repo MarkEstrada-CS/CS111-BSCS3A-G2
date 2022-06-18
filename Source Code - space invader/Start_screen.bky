@@ -1,0 +1,277 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="BzdfBjw*)^[%#T$nu*x*" x="-230" y="-230">
+    <mutation component_type="Form" is_generic="false" instance_name="Start_screen" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">Start_screen</field>
+    <statement name="DO">
+      <block type="component_method" id="$Uvj:SA6:69^ti~o*AC%">
+        <mutation component_type="Notifier" method_name="CustomChooseDialog" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="math_number" id=".pu[~EP71+6_b+;0qB@]">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="Mp{FQ-fFBE=?00.|CA,$">
+            <field name="TEXT">Do you want to close app?</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="text" id="A4OTyX):.i9:W.,;BN)n">
+            <field name="TEXT">Quit Game</field>
+          </block>
+        </value>
+        <value name="ARG3">
+          <block type="text" id="+e7Y,aC_`~+hd-sn+O)V">
+            <field name="TEXT">Yes</field>
+          </block>
+        </value>
+        <value name="ARG4">
+          <block type="text" id="-0lnfUwzPuI`bkb1fr2X">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+        <value name="ARG5">
+          <block type="text" id="6=wKX}=R2a0+]*gzq|{~">
+            <field name="TEXT">No</field>
+          </block>
+        </value>
+        <value name="ARG6">
+          <block type="text" id="NX5R|xrL2v-F8Q?^6GFK">
+            <field name="TEXT">saucer.png</field>
+          </block>
+        </value>
+        <value name="ARG7">
+          <block type="logic_boolean" id="?`){V4)Pd$C@Gmj1hC~s">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <value name="ARG8">
+          <block type="logic_boolean" id="qX2|{k-m~;/$?3Ul)Xi]">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=")k?8]fQp%q^l_nbAn3v2" x="-750" y="-150">
+    <mutation component_type="Button" is_generic="false" instance_name="About_Us_Btn" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">About_Us_Btn</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="EEjhn[,:ru*G{^`}a}*(">
+        <value name="SCREEN">
+          <block type="helpers_screen_names" id="EPByBZ0Dw.d/lq/]AqLI">
+            <field name="SCREEN">About_Us</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=",don3oV}rMlt]^}`4gPD" x="-750" y="-70">
+    <mutation component_type="Button" is_generic="false" instance_name="START_BTN" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">START_BTN</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreenWithStartValue" id="PeQE4aKHVuN|}?eS(2Cf">
+        <value name="SCREENNAME">
+          <block type="helpers_screen_names" id="n0Ga(MVI[Rx9)9nm+h:a">
+            <field name="SCREEN">main</field>
+          </block>
+        </value>
+        <value name="STARTVALUE">
+          <block type="text" id="{5#oaJh9zEPlw=:5qmO?">
+            <field name="TEXT">select</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="t7b9xDb#w}Cq{{)u2cd$" x="-750" y="30">
+    <mutation component_type="Form" is_generic="false" instance_name="Start_screen" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Start_screen</field>
+    <statement name="DO">
+      <block type="component_method" id="JDX]^2kfE=3co)c]0Pdi">
+        <mutation component_type="MovingImage" method_name="MoveImage" is_generic="false" instance_name="MovingImage1"></mutation>
+        <field name="COMPONENT_SELECTOR">MovingImage1</field>
+        <value name="ARG0">
+          <block type="component_component_block" id="U}USJv_lhhmawpGK@*Xf">
+            <mutation component_type="HorizontalArrangement" instance_name="saucer2_Arrangement3"></mutation>
+            <field name="COMPONENT_SELECTOR">saucer2_Arrangement3</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="n:s~}:NhMyMjnz-+MAED">
+            <field name="TEXT">saucer.png</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="H7YJJ!U6-d`zHnTK2;vW">
+            <mutation component_type="MovingImage" method_name="MoveImage" is_generic="false" instance_name="MovingImage1"></mutation>
+            <field name="COMPONENT_SELECTOR">MovingImage1</field>
+            <value name="ARG0">
+              <block type="component_component_block" id="Q$ReiiE@h%5]g39jc=7P">
+                <mutation component_type="HorizontalArrangement" instance_name="rocket_Arrangement5"></mutation>
+                <field name="COMPONENT_SELECTOR">rocket_Arrangement5</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="gkq]::]E(V}CEMRK|.Mw">
+                <field name="TEXT">spaceship.png</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="PH[oK.iZ-~-Zj+xK]3#G" x="-150" y="90">
+    <mutation component_type="Notifier" is_generic="false" instance_name="Notifier1" event_name="GotCustomChooseDialog"></mutation>
+    <field name="COMPONENT_SELECTOR">Notifier1</field>
+    <statement name="DO">
+      <block type="controls_if" id="Y/hUqMUNblSjHo$UO^c%">
+        <mutation elseif="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="YLa$(1TtOChvX+u[3WW1">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id=".7_V|#PTuPd?[!]#O947">
+                <mutation>
+                  <eventparam name="id"></eventparam>
+                </mutation>
+                <field name="VAR">id</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="W{u+/R19_siB-dtlX@z6">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="]r40K,0:O;hpk1UX$~|+">
+            <value name="IF0">
+              <block type="logic_compare" id="!reM@9yx_|@dsabSIy+b">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="Fy/.^eTRl.Ef83u/2^]z">
+                    <mutation>
+                      <eventparam name="choice"></eventparam>
+                    </mutation>
+                    <field name="VAR">choice</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="V5Hq*!Hi*@_hrn!E|~82">
+                    <field name="TEXT">Yes</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_closeApplication" id="HHqi7myDg6233*}^Xw|j"></block>
+            </statement>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="math_compare" id="+`2R4.4~%?7[Ed)}W#NP">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="k0r6j5Q}-LUv5DENjZ0W">
+                <mutation>
+                  <eventparam name="id"></eventparam>
+                </mutation>
+                <field name="VAR">id</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="jmlDWP-_ou|n45Up^/h/">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="controls_if" id="Y$3I2kyQr+C207twXRY-">
+            <value name="IF0">
+              <block type="logic_compare" id="R?F0kXA-XzV{]R?13qVn">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="Y8=k?f!g6ylzC@2(p]rI">
+                    <mutation>
+                      <eventparam name="choice"></eventparam>
+                    </mutation>
+                    <field name="VAR">choice</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="*k,!#mpk[Jh.$_E?#.xs">
+                    <field name="TEXT">Yes</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_closeApplication" id="Bcr^lI+dqoegk[/DmC5^"></block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="h4Bnb.gIT(NPCQ344:p=" x="-750" y="230">
+    <mutation component_type="Button" is_generic="false" instance_name="QUIT_BTN" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">QUIT_BTN</field>
+    <statement name="DO">
+      <block type="component_method" id="+M,z9GSgk%za:#54.p-V">
+        <mutation component_type="Notifier" method_name="CustomChooseDialog" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="math_number" id="ixepRlFxUY1L@v?xsyT:">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="cqjXYkw/`trIO:eT?95v">
+            <field name="TEXT">Do you want to close app?</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="text" id=";O80Y|-5N[sSZSV-Nz=f">
+            <field name="TEXT">Quit Game</field>
+          </block>
+        </value>
+        <value name="ARG3">
+          <block type="text" id="24t4(9je|$@D#gV}FVnf">
+            <field name="TEXT">Yes</field>
+          </block>
+        </value>
+        <value name="ARG4">
+          <block type="text" id=":y(E;mCDU`yQW|?/t5vJ">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+        <value name="ARG5">
+          <block type="text" id="G8[RrB4(2{`jmK7OG9u5">
+            <field name="TEXT">No</field>
+          </block>
+        </value>
+        <value name="ARG6">
+          <block type="text" id="y5n+3]G#.xLj}:LzW0H%">
+            <field name="TEXT">saucer.png</field>
+          </block>
+        </value>
+        <value name="ARG7">
+          <block type="logic_boolean" id="qH8}UPEv,aWnD$??epfv">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <value name="ARG8">
+          <block type="logic_boolean" id="$e#H`nqssA5yq_0x*Jiw">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="241" language-version="34"></yacodeblocks>
+</xml>

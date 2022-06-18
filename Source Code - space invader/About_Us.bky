@@ -1,0 +1,16 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="S~$,oFUm`E%mai66Y1;H" x="10" y="-50">
+    <mutation component_type="Form" is_generic="false" instance_name="About_Us" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">About_Us</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="J}+cRzIDykBM2H?L*41R">
+        <value name="SCREEN">
+          <block type="helpers_screen_names" id="#*_$+D^R#}vi)KelQ1!W">
+            <field name="SCREEN">Start_screen</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="241" language-version="34"></yacodeblocks>
+</xml>

@@ -1,0 +1,165 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="`m^(6;exmJX/Ce2z@$$%" x="-530" y="-350">
+    <field name="NAME">splash</field>
+    <value name="VALUE">
+      <block type="math_number" id="K0_~4P)vf~)0I,P99`|4">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="-=aPXrxG`h%hXD0aaC/Y" x="-530" y="-310">
+    <field name="NAME">list</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="z7)EcU2)qt4BfJE=B$8?">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="sPLi5eqzf5Gk1G03]vUk">
+            <field name="TEXT">Hello World!</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="!sw)HJX*+}tCkv;ecX*a">
+            <field name="TEXT">Thank you for using our app!</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id=";S.]wqfVf5Q/9(^lE9Gb">
+            <field name="TEXT">BSCS 3A LETSS GOOOO</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="ga8,dogXE}hYQhchpYsC">
+            <field name="TEXT">Hi Maam Dawn!</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="[,,Yh!KX,qGF?S(1:~lP">
+            <field name="TEXT">Easter Egg</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="i=Khzo#pqXU@TrI`Gd|+">
+            <field name="TEXT">How are you?</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="WD1f|Be()L`gr+9(:84H" x="-530" y="-130">
+    <mutation component_type="Form" is_generic="false" instance_name="Screen1" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Screen1</field>
+    <statement name="DO">
+      <block type="component_method" id="4U+T2};)7v+~|8E~f8H^">
+        <mutation component_type="MovingImage" method_name="MoveImage" is_generic="false" instance_name="MovingImage1"></mutation>
+        <field name="COMPONENT_SELECTOR">MovingImage1</field>
+        <value name="ARG0">
+          <block type="component_component_block" id="A$,@FZbW=!ZLeZkh?fTt">
+            <mutation component_type="HorizontalArrangement" instance_name="Horizontal_Arrangement1"></mutation>
+            <field name="COMPONENT_SELECTOR">Horizontal_Arrangement1</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="FJS~/d$}UMhlJb!3hkr(">
+            <field name="TEXT">saucer.png</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id=".U~$R6bjl{p2M*]id/+6">
+            <mutation component_type="MakeroidLinearProgressbar" set_or_get="set" property_name="Progress" is_generic="false" instance_name="Linear_Progressbar1"></mutation>
+            <field name="COMPONENT_SELECTOR">Linear_Progressbar1</field>
+            <field name="PROP">Progress</field>
+            <value name="VALUE">
+              <block type="lexical_variable_get" id=":8,InhVc$aK`ytmr={MS">
+                <field name="VAR">global splash</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="LV}Ftc8AAE$}k-orsbwq" x="-530" y="30">
+    <mutation component_type="HorizontalArrangement" is_generic="false" instance_name="Horizontal_Arrangement1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Horizontal_Arrangement1</field>
+    <statement name="DO">
+      <block type="component_method" id="7M?ZR1GypO/{:q0K#*%R">
+        <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="lists_pick_random_item" id="W(hxe:Yxk/;w)AMop,EB">
+            <value name="LIST">
+              <block type="lexical_variable_get" id="@$Sj!@xEF-|jZie|^{YV">
+                <field name="VAR">global list</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="lN$;Rl1VH(AE|`bh!?b]" x="-530" y="150">
+    <mutation component_type="Clock" is_generic="false" instance_name="Clock1" event_name="Timer"></mutation>
+    <field name="COMPONENT_SELECTOR">Clock1</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="(8JkOFx8mUz3q*H[0#{.">
+        <field name="VAR">global splash</field>
+        <value name="VALUE">
+          <block type="math_add" id="Q*6:_*-%upWfyQ$0qImW">
+            <mutation items="2"></mutation>
+            <value name="NUM0">
+              <block type="lexical_variable_get" id=")Z*J56{UI?o,]}!Ed$f^">
+                <field name="VAR">global splash</field>
+              </block>
+            </value>
+            <value name="NUM1">
+              <block type="math_number" id="*i[Sv1zRco`u3f(SCG;d">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="LV:H,t.)T,@v2wn5razb">
+            <mutation component_type="MakeroidLinearProgressbar" set_or_get="set" property_name="Progress" is_generic="false" instance_name="Linear_Progressbar1"></mutation>
+            <field name="COMPONENT_SELECTOR">Linear_Progressbar1</field>
+            <field name="PROP">Progress</field>
+            <value name="VALUE">
+              <block type="lexical_variable_get" id="TK]K`_q(xFe1odvhqa*0">
+                <field name="VAR">global splash</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="^z@;(7h?J.k~SLHr6o64">
+                <value name="IF0">
+                  <block type="math_compare" id="]t{tQoT*`MJcfD/XuAW-">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="r#~!yd8]c9~I1b0EGeta">
+                        <field name="VAR">global splash</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="]P,NO!DCu%_qq+5Q.l.R">
+                        <field name="NUM">100</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="controls_openAnotherScreen" id="1uSWz$eLlY,PPy+3Fk.$">
+                    <value name="SCREEN">
+                      <block type="helpers_screen_names" id="qqkcXrD,ln$W.}*J(YV~">
+                        <field name="SCREEN">Start_screen</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="241" language-version="34"></yacodeblocks>
+</xml>
